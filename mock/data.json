@@ -1,44 +1,80 @@
 {
-  "videoList": [
+  "videoList": [ // 首页接口数据集合
     {
-      "cover": "http://static.cometochina.com/images/trip/56f77cfba037f3092c6bd8c2e829ff55.JPG",
-      "id": "1"
+      "cover": "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg", // 列表封面图
+      "id": "1", // 列表id
+      "title": "标题", // 列表视频标题
+      "description": "一句话描述" // 列表视频一句话介绍
     },
     {
-      "cover": "http://static.cometochina.com/images/trip/f6406014558973e5c53ae56184713d03.jpg",
-      "id": "2"
+      "cover": "http://yeeduo.com/wp-content/uploads/2016/11/2%E3%80%81%E6%96%B0%E5%B9%B4%E9%A4%90%E5%85%B7%E5%A5%97%E8%A3%85-1.jpg",
+      "id": "2",
+      "title": "标题",
+      "description": "一句话描述"
     },
     {
-      "cover": "http://static.cometochina.com/images/advert/e80ba379cc2c6e25f1e54bccf708c362.jpg",
-      "id": "3"
+      "cover": "http://yeeduo.com/wp-content/uploads/2016/11/2%E3%80%81%E6%96%B0%E5%B9%B4%E9%A4%90%E5%85%B7%E5%A5%97%E8%A3%85-1.jpg",
+      "id": "3",
+      "title": "标题",
+      "description": "一句话描述"
     },
     {
-      "cover": "http://static.cometochina.com/images/advert/e80ba379cc2c6e25f1e54bccf708c362.jpg",
-      "id": "4"
+      "cover": "http://yeeduo.com/wp-content/uploads/2016/11/2%E3%80%81%E6%96%B0%E5%B9%B4%E9%A4%90%E5%85%B7%E5%A5%97%E8%A3%85-1.jpg",
+      "id": "4",
+      "title": "标题",
+      "description": "一句话描述"
+    },
+    {
+      "cover": "http://yeeduo.com/wp-content/uploads/2016/11/2%E3%80%81%E6%96%B0%E5%B9%B4%E9%A4%90%E5%85%B7%E5%A5%97%E8%A3%85-1.jpg",
+      "id": "5",
+      "title": "标题",
+      "description": "一句话描述"
     }
   ],
-  "videoDetail": [
+  "videoDetail": [ // 详情页接口数据集合
     {
-      "banner": [
+      "video": "http://yeeduo.com/video/01.mp4", // id对应视频地址，显示格式是mp4
+      "id": "1", // 详情页id
+      "banner": [ // 轮播图列表
         "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg",
         "http://yeeduo.com/wp-content/uploads/2016/11/2%E3%80%81%E6%96%B0%E5%B9%B4%E9%A4%90%E5%85%B7%E5%A5%97%E8%A3%85-1.jpg",
         "http://yeeduo.com/wp-content/uploads/2016/11/3%E3%80%81%E5%B1%B1%E8%8C%B6%E8%8A%B1%E4%B8%9D%E5%B7%BE.jpg",
         "http://yeeduo.com/wp-content/uploads/2016/12/8%E3%80%81%E9%9A%86%E5%BE%B7%E5%9B%AD.jpg"
       ],
-      "video": "http://yeeduo.com/video/01.mp4",
-      "content": "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit placeat magni magnam recusandae, consectetur accusamus quis aut, ducimus, alias est fugiat et pariatur itaque repellendus odio error. Totam, porro? Officia.",
-      "id": 1
+      "content": [ // 图文列表
+        {
+          "title": "图文大标题1", // 用于目录跟随
+          "img": "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg",
+          "text": ["段落一", "段落二", "..."]
+        },
+        {
+          "title": "图文大标题2",
+          "img": "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg",
+          "text": ["段落一", "段落二", "..."]
+        }
+      ]
     },
     {
-      "banner": [
+      "video": "http://yeeduo.com/video/01.mp4", // id对应视频地址
+      "id": "1", // 详情页id
+      "banner": [ // 轮播图列表
         "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg",
         "http://yeeduo.com/wp-content/uploads/2016/11/2%E3%80%81%E6%96%B0%E5%B9%B4%E9%A4%90%E5%85%B7%E5%A5%97%E8%A3%85-1.jpg",
         "http://yeeduo.com/wp-content/uploads/2016/11/3%E3%80%81%E5%B1%B1%E8%8C%B6%E8%8A%B1%E4%B8%9D%E5%B7%BE.jpg",
         "http://yeeduo.com/wp-content/uploads/2016/12/8%E3%80%81%E9%9A%86%E5%BE%B7%E5%9B%AD.jpg"
       ],
-      "video": "http://yeeduo.com/video/01.mp4",
-      "content": "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit placeat magni magnam recusandae, consectetur accusamus quis aut, ducimus, alias est fugiat et pariatur itaque repellendus odio error. Totam, porro? Officia.",
-      "id": 2
+      "content": [ // 图文列表
+        {
+          "title": "图文大标题1", // 用于目录跟随
+          "img": "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg",
+          "text": ["段落一", "段落二", "..."]
+        },
+        {
+          "title": "图文大标题2",
+          "img": "http://yeeduo.com/wp-content/uploads/2016/11/1%E3%80%81%E9%9D%92%E5%B2%9B%E5%9C%B0%E9%93%812016%E7%8C%B4%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%A5%A8-1.jpg",
+          "text": ["段落一", "段落二", "..."]
+        }
+      ]
     }
   ]
 }

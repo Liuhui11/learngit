@@ -20,6 +20,7 @@ input::-webkit-input-placeholder {
   font-size: .4rem; // 30px
 }
 body {
+  background-color: #faf9f4!important;
   font-size: 12px;
 }
 [data-dpr="2"] body {
@@ -27,4 +28,7 @@ body {
 }
 [data-dpr="3"] body {
   font-size: 54px;
+}
+ol, ul {
+  list-style: none;
 }

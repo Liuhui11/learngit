@@ -1,11 +1,14 @@
 <template>
-  <div class="items">
-    <div class="item" v-for="(item, index) in oData">
-      <img :src="item.cover" @click="toDetail('/videoDetail', item.id)">
+  <div class="container">
+    <div class="col-sm-4 col-md-3 item" v-for="(item, index) in oData">
+      <router-link :to="'/videoDetail/' + item.id">
+        <img :src="item.cover">
+      </router-link>
     </div>
   </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
   data () {
     return {
@@ -13,28 +16,23 @@ export default {
     }
   },
   methods: {
-    // 点击带参数（对应显示的详情页id）传递
-    toDetail (path, id) {
-      this.$router.push({
-        path: path,
-        query: {
-          id: id
-        }
-      })
-    }
   },
   mounted () {
-    this.$ajax.get('http://localhost:3000/videoList')
-    .then(
-      m => {
-        this.oData = m.data
-      }
-    )
+    axios.get('/home/api/index')
+    .then(m => {
+      this.oData = m.data
+    })
   }
 }
 </script>
-<style scoped lang="scss">
-  .item {
-    width: 10rem;
+<style scoped lang="less">
+  .container {
+    .item {
+      margin-bottom: 30px;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 </style>
