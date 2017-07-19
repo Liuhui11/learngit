@@ -7,7 +7,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'), // 文件输出的位置
     assetsSubDirectory: 'webDist',
-    assetsPublicPath: 'http://bxu2347750151.my3w.com/dist/', // '<?php echo $domain_static;?>/dist/' ''
+    assetsPublicPath: 'http://bxu2347750151.my3w.com/', // '<?php echo $domain_static;?>/dist/' ''
     // assetsPublicPath: 'http://static.vaya.com:8080/dist', //'' 'http://static.cometochina.com/dist'
     productionSourceMap: false,
     // Gzip off by default as many popular static hosts such as

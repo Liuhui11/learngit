@@ -35,13 +35,13 @@
     </div>
 
     <!-- 详情页内容 -->
-    <div class="container" v-if="oData.content">
+    <div class="container" v-if="oData.content !== false">
       <!-- 图文介绍 -->
       <div class="main col-sm-8 col-md-9">
-        <section v-for="(content, index) in oData[$route.params.id - 1].content">
-          <h3 :id="'title' + index">标题{{index}}</h3>
+        <section v-for="(content, index) in oData.content">
+          <h3 :id="'title' + index">{{content.title}}</h3>
           <img :src="content.img" alt="">
-          <p>{{content.text}}</p>
+          <p v-for="(text, key) in content.text">{{text}}</p>
         </section>
       </div>
       <!-- 跟随目录 -->
@@ -73,7 +73,7 @@ export default {
   },
   mounted () {
     // 图文内容
-    axios.get(`/home/api/info?id=${this.id}`)
+    axios.get(`/api/home/api/info?id=${this.id}`)
     .then(
       m => {
         this.oData = m.data

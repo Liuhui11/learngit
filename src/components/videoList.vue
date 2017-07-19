@@ -18,7 +18,7 @@ export default {
   methods: {
   },
   mounted () {
-    axios.get('/home/api/index')
+    axios.get('/api/home/api/index')
     .then(m => {
       this.oData = m.data
     })
